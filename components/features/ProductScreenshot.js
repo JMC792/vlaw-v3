@@ -54,7 +54,7 @@ export default function ProductScreenshot(props) {
 
           {/* Image */}
           <Image
-            src={'https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&&exp=-35&q=100&w=2070&auto=format&fit=crop'}
+            src={props.image}
             alt="Product screenshot"
             className="order-1 w-[48rem] lg:max-w-none rounded-xl ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}
