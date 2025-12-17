@@ -115,28 +115,27 @@ function Navbar(props) {
                                 </div>
 
                                 {/* Language Switcher */}
-                                <div className="flex gap-2 text-sm">
+                                <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
                                     <button
                                         type="button"
                                         onClick={() => changeLanguage('en')}
-                                        className={`px-3 py-1 rounded border ${
+                                        className={` ${
                                             locale === 'en'
-                                                ? 'bg-yellow-500 text-black border-yellow-500'
-                                                : 'border-gray-400'
                                         }`}
                                     >
-                                        EN
+                                        ENGLISH
                                     </button>
+                                </div>
+
+                                <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
                                     <button
                                         type="button"
                                         onClick={() => changeLanguage('es')}
-                                        className={`px-3 py-1 rounded border ${
+                                        className={` ${
                                             locale === 'es'
-                                                ? 'bg-yellow-500 text-black border-yellow-500'
-                                                : 'border-gray-400'
                                         }`}
                                     >
-                                        ES
+                                        ESPAÑOL
                                     </button>
                                 </div>
                             </div>

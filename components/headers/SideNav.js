@@ -105,10 +105,8 @@ export default function SideNav(props){
                             <div
                                 type="button"
                                 onClick={() => changeLanguage('en')}
-                                className={`px-3 py-1 rounded border ${
+                                className={`offcanvas-text ${
                                     locale === 'en'
-                                        ? 'bg-yellow-500 text-black border-yellow-500'
-                                        : 'border-gray-400'
                                 }`}
                             >
                                 EN
@@ -116,10 +114,8 @@ export default function SideNav(props){
                             <div
                                 type="button"
                                 onClick={() => changeLanguage('es')}
-                                className={`px-3 py-1 rounded border ${
+                                className={`offcanvas-text ${
                                     locale === 'es'
-                                        ? 'bg-yellow-500 text-black border-yellow-500'
-                                        : 'border-gray-400'
                                 }`}
                             >ES
                             </div>
