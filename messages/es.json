@@ -1,0 +1,151 @@
+{
+  "index": {
+    "metadata": {
+      "title": "",
+      "description": ""
+    },
+    "hero": {
+      "title": "Lucha por tu Sueño Americano con Representación Confiable y Probada",
+      "subtitle": "Servicios de inmigración de primer nivel con sede en Atlanta, Georgia. Valentin Law, LLC puede brindar representación en los 50 estados. Inmigración para Todos",
+      "button": {
+        "title": "Comienza Ahora",
+        "link": "/contact"
+      }
+    },
+    "services": {
+      "heading": "Nuestros Servicios",
+      "title": "Servicios de Inmigración Enfocados en el Cliente",
+      "paragraph": "Cada caso es diferente. Valentin Law, LLC se enfoca en tus circunstancias y en la mejor solución para ti. Tú y tu caso siempre serán nuestra prioridad.",
+      "one": {
+        "image": "/icons/Homepage/svg2.1.svg",
+        "title": "Solicitudes de Visa",
+        "paragraph": "Guiamos a nuestros clientes a través de la complejidad de las solicitudes de visa con asesoría experta, asegurando precisión y eficiencia en todo el proceso."
+      },
+      "two": {
+        "image": "/icons/Homepage/svg2.2.svg",
+        "title": "Green Card",
+        "paragraph": "Asistimos a individuos y familias en la obtención de su green card mediante asesoría legal integral y representación diligente."
+      },
+      "three": {
+        "image": "/icons/Homepage/svg2.3.svg",
+        "title": "Ciudadanía",
+        "paragraph": "Facilitamos el camino hacia la ciudadanía con estrategias legales personalizadas y asistencia dedicada en cada paso del proceso de naturalización."
+      },
+      "four": {
+        "image": "/icons/services/thai.svg",
+        "title": "Asilo",
+        "paragraph": "Brindamos apoyo legal compasivo a personas que buscan asilo, protegiendo sus derechos y abogando por su seguridad y bienestar."
+      },
+      "button": {
+        "title": "Descubrir Más",
+        "link": "/contact"
+      }
+    },
+    "about": {
+      "heading": "Sobre Nosotros",
+      "title": "Nuestra Historia y Misión",
+      "paragraph": {
+        "one": "Orgulloso nativo de Perú, el Sr. Valentín emigró a los Estados Unidos a los 5 años. Sin conocimiento del idioma o la cultura, gracias a su trabajo arduo, el Sr. Valentín se graduó de la Facultad de Derecho de la Universidad de Carolina del Norte en Chapel Hill en 2020, convirtiéndose en abogado a los 25 años. Desde entonces ha dedicado su carrera a representar a cientos de personas en el campo del derecho de inmigración en todo Estados Unidos. Ha ayudado a asegurar resultados positivos para personas de diversos orígenes y países, incluyendo: México, Guatemala, Honduras, El Salvador, Perú, Uruguay, Argentina, Brasil, Ecuador, Venezuela, Nigeria, Francia, India, Rusia y más.",
+        "two": ""
+      },
+      "button": {
+        "title": "Conéctate con Nosotros",
+        "link": "/contact"
+      }
+    },
+    "stat": {
+      "days": {
+        "monday": "lunes",
+        "tuesday": "martes",
+        "wednesday": "miércoles",
+        "thursday": "jueves",
+        "friday": "viernes",
+        "saturday": "sábado",
+        "sunday": "domingo"
+      },
+      "times": {
+        "time1": "7:00am - 8:00am",
+        "time2": "5:30pm - 6:30pm",
+        "time3": "6:30pm - 7:45pm",
+        "time4": "7:45pm - 8:45pm",
+        "time5": "7:30pm - 8:30pm",
+        "time6": "11:00am - 1:00pm",
+        "time7": "6:30pm - 7:30pm",
+        "time8": "cerrado"
+      },
+      "class": {
+        "gi": "Gi",
+        "nogi": "No-Gi",
+        "kidsgi": "Niños Gi",
+        "fundamentals": "Fundamentos",
+        "advanced": "Avanzado",
+        "openmat": "Open Mat",
+        "muaythai": "Muay Thai",
+        "closed": "Cerrado"
+      }
+    },
+    "testimonials": {
+      "heading": "Historias de Éxito",
+      "title": "Lo Que Nuestros Miembros Dicen",
+      "name": "David Aguilar",
+      "position": "Queen City Web Solutions",
+      "paragraph": "Excelente servicio, Julio es una gran persona y gracias a su ayuda mi papá pudo obtener su residencia. Julio se tomó su tiempo para preparar y guiar a mi papá a través de este camino difícil. Siempre estaré agradecido por su ayuda."
+    },
+    "mission": {
+      "heading": "Por Qué Elegirnos",
+      "title": "Soluciones de Inmigración Confiables",
+      "paragraph1": "Somos más que simples representantes legales; somos tus defensores locales de inmigración. Con una amplia experiencia sirviendo a la comunidad de Atlanta, GA, comprendemos los desafíos legales únicos que enfrentan las personas en esta región. Nuestra experiencia especializada garantiza soluciones adaptadas para abordar tus necesidades de inmigración de manera efectiva y eficiente.",
+      "paragraph2": "La calidad es nuestro sello. Utilizamos estrategias legales de primer nivel y metodologías avanzadas para lograr resultados duraderos para nuestros clientes. Nuestro equipo dedicado se compromete a manejar cada caso con precisión y cuidado, asegurando que tu estatus legal esté protegido a largo plazo.",
+      "paragraph3": "La satisfacción del cliente impulsa nuestro enfoque. Valoramos tu opinión, respetamos tus tiempos y adaptamos nuestros servicios a tus necesidades específicas. Creemos en fomentar relaciones duraderas con nuestros clientes, siendo tu bienestar nuestra mayor prioridad.",
+      "paragraph4": "Ofrecemos una amplia gama de servicios de inmigración, desde solicitudes de visa y asistencia con la green card hasta representación en casos de asilo. Además, ofrecemos estos servicios completos a tarifas competitivas, asegurando que recibas el mejor valor sin comprometer la calidad. También ofrecemos descuentos exclusivos para personal militar, socorristas, educadores y personas mayores.",
+      "button": {
+        "title": "Contáctanos",
+        "link": "/contact"
+      }
+    },
+    "contact": {
+      "heading": "Contáctanos",
+      "title": "Únete a Nuestra Comunidad de Jiu Jitsu Brasileño",
+      "paragraph": "Si estás listo para comenzar un camino de superación personal a través del Jiu Jitsu Brasileño, te invitamos a ponerte en contacto con nosotros. Nuestros instructores experimentados están aquí para responder tus preguntas y ayudarte a comenzar.",
+      "button": {
+        "title": "Conectar Ahora",
+        "link": ""
+      }
+    },
+    "blog": {
+      "heading": "Ideas y Consejos",
+      "title": "Mejora tu Conocimiento de Jiu Jitsu",
+      "button": {
+        "title": "Leer Más",
+        "link": ""
+      },
+      "card1": {
+        "date": "07 Sept, 2023",
+        "article": "Dominando Técnicas Esenciales de Jiu Jitsu Brasileño",
+        "blogType": "Desglose Técnico",
+        "sentence": "Explora las técnicas fundamentales del Jiu Jitsu Brasileño y aprende cómo forman la base de tu práctica."
+      },
+      "card2": {
+        "date": "07 Sept, 2023",
+        "article": "El Juego Mental: Superando Desafíos en Jiu Jitsu",
+        "blogType": "Mentalidad",
+        "sentence": "Descubre estrategias para mejorar tu resiliencia mental y enfrentar desafíos con una mentalidad positiva y enfocada durante tu camino en el Jiu Jitsu."
+      },
+      "card3": {
+        "date": "07 Sept, 2023",
+        "article": "Los Beneficios del Jiu Jitsu Brasileño para Mujeres",
+        "blogType": "Empoderamiento Femenino",
+        "sentence": "Conoce las ventajas únicas que el Jiu Jitsu Brasileño ofrece a las mujeres, tanto en habilidades de defensa personal como en crecimiento personal."
+      }
+    },
+    "newsletter": {
+      "heading": "¡Mantente Informado e Inspirado!",
+      "title": "Suscríbete a Nuestras Actualizaciones de Jiu Jitsu",
+      "sentence": "Tu hogar merece el mejor cuidado, y nuestro equipo experto en Vapor X Crawlspaces está aquí para brindarlo. Ya sea encapsulación, reparación o mantenimiento de espacios de rastreo, estamos listos para ofrecer soluciones personalizadas y de alta calidad para tu hogar.",
+      "button": {
+        "title": "Suscríbete Ahora",
+        "link": "/contact"
+      }
+    }
+  }
+}

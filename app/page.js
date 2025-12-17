@@ -8,6 +8,7 @@ import SimpleCentered from "@components/testimonials/SimpleCentered";
 //Locales/Data
 import language from "/public/locales/english/homepage.json";
 
+
 // Icons
 
 // Images

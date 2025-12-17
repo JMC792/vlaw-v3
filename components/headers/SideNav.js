@@ -1,11 +1,36 @@
+'use client'
+
 import { Fragment } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {useState, useEffect} from 'react';
+import {useRouter} from 'next/navigation';
 
 //Components
 import {XMarkIcon} from "@heroicons/react/20/solid";
 
 export default function SideNav(props){
+
+    // Current locale (for highlighting active button)
+        const [locale, setLocale] = useState('en');
+        const router = useRouter();
+
+        // Read locale from cookie on mount
+            useEffect(() => {
+                if (typeof document !== 'undefined') {
+                    const match = document.cookie.match(/(?:^|; )locale=([^;]+)/);
+                    if (match?.[1]) {
+                        setLocale(decodeURIComponent(match[1]));
+                    }
+                }
+            }, []);
+
+    // Change language & refresh page
+    const changeLanguage = (newLocale) => {
+        document.cookie = `locale=${newLocale}; path=/`;
+        setLocale(newLocale);
+        router.refresh();
+    };
 
     return(
         <Fragment>
@@ -76,6 +101,28 @@ export default function SideNav(props){
                                     {props.links[4]}
                                 </div>
                             </Link>
+
+                            <div
+                                type="button"
+                                onClick={() => changeLanguage('en')}
+                                className={`px-3 py-1 rounded border ${
+                                    locale === 'en'
+                                        ? 'bg-yellow-500 text-black border-yellow-500'
+                                        : 'border-gray-400'
+                                }`}
+                            >
+                                EN
+                            </div>
+                            <div
+                                type="button"
+                                onClick={() => changeLanguage('es')}
+                                className={`px-3 py-1 rounded border ${
+                                    locale === 'es'
+                                        ? 'bg-yellow-500 text-black border-yellow-500'
+                                        : 'border-gray-400'
+                                }`}
+                            >ES
+                            </div>
                             
                         </div>
 

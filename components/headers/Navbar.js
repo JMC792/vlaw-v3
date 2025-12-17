@@ -1,27 +1,44 @@
 'use client'
 
 import {useState, useEffect, Fragment} from 'react';
-import Link from 'next/link' 
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
+import {useRouter} from 'next/navigation';
 
-//Components
+// Components
 import SideNav from './SideNav';
 
-//Data
+// Data
 import navbar from '/public/locales/english/navbar.json';
 
-//Images/SVG
-import { Bars3Icon } from '@heroicons/react/24/solid'
-
-
+// Images/SVG
+import { Bars3Icon } from '@heroicons/react/24/solid';
 
 function Navbar(props) {
-
-
-    //Off Canvas (mobile) menu hook
+    // Off Canvas (mobile) menu hook
     const [offcanvas, setOffcanvas] = useState(false);
     const showOffcanvas = () => setOffcanvas(!offcanvas);
 
+    // Current locale (for highlighting active button)
+    const [locale, setLocale] = useState('en');
+    const router = useRouter();
+
+    // Read locale from cookie on mount
+    useEffect(() => {
+        if (typeof document !== 'undefined') {
+            const match = document.cookie.match(/(?:^|; )locale=([^;]+)/);
+            if (match?.[1]) {
+                setLocale(decodeURIComponent(match[1]));
+            }
+        }
+    }, []);
+
+    // Change language & refresh page
+    const changeLanguage = (newLocale) => {
+        document.cookie = `locale=${newLocale}; path=/`;
+        setLocale(newLocale);
+        router.refresh();
+    };
 
     // Adds Sticky to Navbar
     useEffect(() => {
@@ -30,6 +47,7 @@ function Navbar(props) {
             window.removeEventListener('scroll', isSticky);
         };
     });
+
     const isSticky = (e) => {
         const navbar = document.querySelector('.header-selection');
         const scrollTop = window.scrollY;
@@ -38,7 +56,7 @@ function Navbar(props) {
             : navbar.classList.remove('is-sticky');
     };
 
-    return(
+    return (
         <Fragment>
             <nav className="absolute w-full z-10 top-0 text-white">
                 <div className="header-selection sticky-style-1 py-4">
@@ -48,16 +66,21 @@ function Navbar(props) {
                         <div className="flex flex-nowrap items-center justify-between">
 
                             {/* Logo */}
-                            <Link href={"/"} >
-                                <Image src={props.logo} height={60} width={80} alt={"logo"} className={"cursor-pointer"}/>
+                            <Link href={"/"}>
+                                <Image
+                                    src={props.logo}
+                                    height={60}
+                                    width={80}
+                                    alt="logo"
+                                    className="cursor-pointer"
+                                />
                             </Link>
 
                             {/* List */}
                             <div className="hidden lg:flex gap-x-6">
-
                                 {/* Home */}
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href= {"/" }>
+                                    <Link href={"/"}>
                                         <div className="capitalize">
                                             {props.link1}
                                         </div>
@@ -66,25 +89,16 @@ function Navbar(props) {
 
                                 {/* About */}
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href= {"/" + [props.link2]}>
+                                    <Link href={"/" + [props.link2]}>
                                         <div className="capitalize">
                                             {props.link2}
                                         </div>
                                     </Link>
                                 </div>
 
-                                {/* Portfolio */}
-                                {/* <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href= {"/" + [props.link3]}>
-                                        <div className="capitalize">
-                                            {props.link3}
-                                        </div>
-                                    </Link>
-                                </div> */}
-
                                 {/* Contact */}
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href= {"/" + [props.link4]}>
+                                    <Link href={"/" + [props.link4]}>
                                         <div className="capitalize">
                                             {props.link4}
                                         </div>
@@ -93,27 +107,53 @@ function Navbar(props) {
 
                                 {/* Service */}
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <Link href= {"/" + [props.link5]}>
+                                    <Link href={"/" + [props.link5]}>
                                         <div className="capitalize">
                                             {props.link5}
                                         </div>
                                     </Link>
                                 </div>
 
+                                {/* Language Switcher */}
+                                <div className="flex gap-2 text-sm">
+                                    <button
+                                        type="button"
+                                        onClick={() => changeLanguage('en')}
+                                        className={`px-3 py-1 rounded border ${
+                                            locale === 'en'
+                                                ? 'bg-yellow-500 text-black border-yellow-500'
+                                                : 'border-gray-400'
+                                        }`}
+                                    >
+                                        EN
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onClick={() => changeLanguage('es')}
+                                        className={`px-3 py-1 rounded border ${
+                                            locale === 'es'
+                                                ? 'bg-yellow-500 text-black border-yellow-500'
+                                                : 'border-gray-400'
+                                        }`}
+                                    >
+                                        ES
+                                    </button>
+                                </div>
                             </div>
 
-                            {/* Contact Us */}
-                            <div className="hidden lg:grid">
-                                <div className='hover:text-yellow-600 transition-colors delay-100'>
+                            
+
+                            {/* Right side: phone + language switcher */}
+                            <div className="hidden lg:flex items-center gap-x-6">
+                                {/* Contact Us */}
+                                <div className="hover:text-yellow-600 transition-colors delay-100">
                                     <a href={"tel: " + [props.phoneNumber]}>
-                                        <div className='flex flex-col items-center'>
+                                        <div className="flex flex-col items-center">
                                             <p>{navbar.call.title}</p>
                                             <p>{props.phoneNumber}</p>
                                         </div>
-                                        
                                     </a>
                                 </div>
-                                    
                             </div>
 
                             {/* Off-canvas Menu */}
@@ -129,21 +169,20 @@ function Navbar(props) {
                 </div>
             </nav>
 
-            <SideNav 
-                links = {[
+            <SideNav
+                links={[
                     props.link1,
                     props.link2,
                     props.link3,
                     props.link4,
-                    props.link5,
+                    props.link5
                 ]}
-                showOffcanvas={showOffcanvas} 
-                offcanvas={offcanvas} 
+                showOffcanvas={showOffcanvas}
+                offcanvas={offcanvas}
                 logo={props.logo}
             />
-
         </Fragment>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
