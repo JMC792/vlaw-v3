@@ -1,4 +1,6 @@
 import { Fragment } from "react";
+import {useTranslations} from 'next-intl';
+
 //locales
 import about from "public/locales/english/about.json";
 import language from "public/locales/english/homepage.json";
@@ -21,17 +23,18 @@ export const metadata = {
 
 export default function Page() {
 
+  const t = useTranslations('index');
   return (
     <Fragment>
       <Hero2 
-        heroTitle={about.hero.title} 
+        heroTitle={t('about.heading')}
         heroSubtitle={about.hero.subtitle}  
         background={"bg-back-about"}
       />
       <ProductScreenshot
-        heading={language.index.about.heading} 
-        title={language.index.about.title} 
-        paragraph={language.index.about.paragraph.one}
+        heading={t('about.heading')}
+        title={t('about.title')} 
+        paragraph={t('about.paragraph.one')}
         image={image4}
       />
       {/* <TwoColumnDark

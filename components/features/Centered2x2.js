@@ -1,34 +1,35 @@
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import {useTranslations} from 'next-intl';
 
-const features = [
-    {
-    name: 'Asylum Applications',
-    description:
-        'Seeking asylum and protection from past persecution or conditions in one`s home country is of the most complex parts of the immigration system. Let us guide your thorugh this process.',
-    icon: CloudArrowUpIcon,
-    },
-    {
-    name: 'Naturalization Process',
-    description:
-        'The path to American citizenship is long and can require many years of diligent work and preparation. We will be there every step of the way.',
-    icon: LockClosedIcon,
-    },
-    {
-    name: 'Removal Defense (Immigration Court)',
-    description:
-        'Being placed in immigraiton court can be a very confusing process. Failing to prepare a defense can result in deportation. Lets figure our your options, and move forward with the best defense in your case.',
-    icon: ArrowPathIcon,
-    },
-    {
-    name: 'Adjustment of Status',
-    description:
-        'Seeking residence in the United States? Let us guide you through the many steps involved in properly seeking this immigration benefit.',
-    icon: FingerPrintIcon,
-    },
-]
+
 
 export default function Example(props) {
+    
+    const t = useTranslations('index');
+    
+    const features = [
+        {
+        name: t('services.one.title'),
+        description: t('services.one.paragraph'),
+        icon: CloudArrowUpIcon,
+        },
+        {
+        name: t('services.two.title'),
+        description: t('services.two.paragraph'),
+        icon: LockClosedIcon,
+        },
+        {
+        name: t('services.three.title'),
+        description: t('services.three.paragraph'),
+        icon: ArrowPathIcon,
+        },
+        {
+        name: t('services.four.title'),
+        description: t('services.four.paragraph'),
+        icon: FingerPrintIcon,
+        },
+    ]
     return (
     <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -64,11 +65,11 @@ export default function Example(props) {
             {/* Buttons */}
             <div className="pt-10 flex items-center justify-center gap-x-6">
                 <Link href="/contact" className="rounded-md bg-blue-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Get started
+                    {props.button1}
                 </Link>
 
                 <Link href="/service" className="text-sm font-semibold leading-6 text-gray-500">
-                    Learn more <span aria-hidden="true">→</span>
+                    {props.button2} <span aria-hidden="true">→</span>
                 </Link>
             </div>
 

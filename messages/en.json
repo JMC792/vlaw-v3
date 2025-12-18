@@ -9,7 +9,7 @@
         "subtitle": "Premier immigration services based in Atlanta, Georgia. Valentin Law, LLC is able to provide representation in 50 states. Immigration for All",
         "button": {
             "title": "Begin Now",
-            "link": "/contact"
+            "link": "Learn More"
         }
     },
     "services": {
@@ -17,24 +17,24 @@
         "title": "Client-Centered Immigration Services",
         "paragraph": "Each case is different. Valentin Law, LLC focuses on your circumstances, and your best solution. You and your  case will always be our priority.",
         "one": {
-        "image": "/icons/Homepage/svg2.1.svg",
-        "title": "Visa Applications",
-        "paragraph": "Navigating the complexities of visa applications with expert guidance and support, ensuring accuracy and efficiency throughout the process."
+            "image": "/icons/Homepage/svg2.1.svg",
+            "title": "Asylum Applications",
+            "paragraph": "Seeking asylum and protection from past persecution or conditions in one`s home country is of the most complex parts of the immigration system. Let us guide your thorugh this process."
         },
         "two": {
-        "image": "/icons/Homepage/svg2.2.svg",
-        "title": "Green Card",
-        "paragraph": "Assisting individuals and families in obtaining green cards through comprehensive legal counsel and diligent representation."
+            "image": "/icons/Homepage/svg2.2.svg",
+            "title": "Naturalization Process",
+            "paragraph": "The path to American citizenship is long and can require many years of diligent work and preparation. We will be there every step of the way."
         },
         "three": {
-        "image": "/icons/Homepage/svg2.3.svg",
-        "title": "Citizenship",
-        "paragraph": "Facilitating the path to citizenship with tailored legal strategies and personalized assistance, guiding clients through each step of the naturalization process."
+            "image": "/icons/Homepage/svg2.3.svg",
+            "title": "Removal Defense (Immigration Court)",
+            "paragraph": "Being placed in immigraiton court can be a very confusing process. Failing to prepare a defense can result in deportation. Lets figure our your options, and move forward with the best defense in your case."
         },
         "four": {
-        "image": "/icons/services/thai.svg",
-        "title": "Asylum",
-        "paragraph": "Providing compassionate legal support to individuals seeking asylum, ensuring their rights are protected and advocating for their safety and well-being."
+            "image": "/icons/services/thai.svg",
+            "title": "Adjustment of Status",
+            "paragraph": "Seeking residence in the United States? Let us guide you through the many steps involved in properly seeking this immigration benefit."
         },
         "button": {
         "title": "Discover More",
@@ -47,6 +47,20 @@
         "paragraph": {
             "one": " A proud native of Peru, Mr. Valentin migrated to the United States at the age of 5. Without knowledge of the language or culture, through hard work, Mr. Valentin graduated from The University of North Carolina at Chapel Hill School of Law in 2020, becoming an attorney at the age of 25. He has since dedicated his career to representing hundreds of individuals in the field of immigration law throughout the United States. He has helped secure positive immigration outcomes for individuals from all kinds of backgrounds and countries of origin including: Mexico, Guatemala, Honduras, El Salvador, Peru, Uruguay, Argentina, Brazil, Ecuador, Venezuela, Nigeria, France, India, Russia, and more." ,
             "two": ""
+        },
+        "features": {
+            "one": {
+                "title": "Swift and Efficient Service",
+                "description": "Prompt response times and efficient handling of your immigration matters. Valentin Law, LLC itself on its speed and effectiveness, ensuring your needs are addressed in a timely manner while maintaining the highest standards of quality."
+            },
+            "two": {
+                "title": "Expertise and Accuracy",
+                "description": "Valentin Law, LLC`s expertise in immigration law ensures accurate and precise handling of your case. You can trust that every detail will be meticulously addressed, resulting in optimal outcomes for your legal matters."
+            },
+            "three": {
+                "title": "Dedicated to Client Satisfaction",
+                "description": "Client satisfaction drives everything. From the initial consultation to the resolution of your immigration issues, your satisfaction is most important. Trust Valentin Law, LLC for an excellent service experience."
+            }
         },
         "button": {
             "title": "Connect with Us",
@@ -106,10 +120,21 @@
     "contact": {
         "heading": "Contact Us",
         "title": "Join Our Brazilian Jiu Jitsu Community",
-        "paragraph": "If you're ready to embark on a journey of self-improvement through Brazilian Jiu Jitsu, we invite you to get in touch with us. Our experienced instructors are here to answer your questions and help you get started.",
+        "paragraph": "Have inquiries or require our assistance? Valentin Law is here for you! Call for expert guidance, consultations, and appointment scheduling. Fill out the form or give us a call – `our we are prepared to handle your immigration matters with care",
         "button": {
             "title": "Connect Now",
             "link": ""
+        },
+        "fields": {
+            "firstname": "First Name",
+            "lastname": "Last Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Your Message",
+            "street": "Street Address",
+            "city": "City",
+            "state": "State",
+            "description": "Description of Issue & Services Needed"
         }
     },
     "blog": {

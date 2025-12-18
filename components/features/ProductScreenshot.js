@@ -1,26 +1,28 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon, CheckCircleIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-
-const features = [
-  {
-    name: 'Swift and Efficient Service',
-    description:
-      'Prompt response times and efficient handling of your immigration matters. Valentin Law, LLC itself on its speed and effectiveness, ensuring your needs are addressed in a timely manner while maintaining the highest standards of quality.',
-    icon: CheckCircleIcon,
-  },
-  {
-    name: 'Expertise and Accuracy',
-    description: 'Valentin Law, LLC`s expertise in immigration law ensures accurate and precise handling of your case. You can trust that every detail will be meticulously addressed, resulting in optimal outcomes for your legal matters.',
-    icon: CheckCircleIcon,
-  },
-  {
-    name: 'Dedicated to Client Satisfaction',
-    description: 'Client satisfaction drives everything. From the initial consultation to the resolution of your immigration issues, your satisfaction is most important. Trust Valentin Law, LLC for an excellent service experience.',
-    icon: CheckCircleIcon,
-  },
-]
+import {useTranslations} from 'next-intl';
 
 export default function ProductScreenshot(props) {
+
+  const t = useTranslations('index');
+  const features = [
+    {
+      name: t('about.features.one.title'),
+      description: t('about.features.one.description'),
+      icon: CheckCircleIcon,
+    },
+    {
+      name: t('about.features.two.title'),
+      description: t('about.features.two.description'),
+      icon: CheckCircleIcon,
+    },
+    {
+      name: t('about.features.three.title'),
+      description: t('about.features.three.description'),
+      icon: CheckCircleIcon,
+    },
+  ]
+  
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

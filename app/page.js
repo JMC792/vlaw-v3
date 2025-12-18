@@ -4,9 +4,9 @@ import Hero from "@components/hero/Hero";
 import Centered2x2 from "@components/features/Centered2x2";
 import TwoColumnDark from "@components/features/TwoColumnDark";
 import SimpleCentered from "@components/testimonials/SimpleCentered";
+import {useTranslations} from 'next-intl';
 
 //Locales/Data
-import language from "/public/locales/english/homepage.json";
 
 
 // Icons
@@ -17,27 +17,26 @@ import Newsletter from "../components/newsletter/CTA1";
 import ProductScreenshot from "@components/features/ProductScreenshot";
 
 export default function Page() {
+
+  const t = useTranslations('index');
   return (
         <Fragment>
-            <Hero 
-              subtitle={language.index.hero.subtitle} 
-              title={language.index.hero.title} 
-              button={language.index.hero.button.title} 
-              buttonLink={language.index.hero.button.link} 
-            />
+            <Hero/>
 
             {/* Services */}
             <Centered2x2
-              heading = {language.index.services.heading}
-              title = {language.index.services.title}
-              paragraph = {language.index.services.paragraph}
+              heading = {t('services.heading')}
+              title = {t('services.title')}
+              paragraph = {t('services.paragraph')}
+              button1 = {t('services.button.title')}
+              button2 = {t('services.button.link')}
             />
 
             {/* About Us */}
             <ProductScreenshot
-              heading={language.index.about.heading} 
-              title={language.index.about.title} 
-              paragraph={language.index.about.paragraph.one}
+              heading={t('about.heading')}
+              title={t('about.title')} 
+              paragraph={t('about.paragraph.one')}
               image={image4}
             />
 
@@ -53,9 +52,10 @@ export default function Page() {
 
             {/* Testimonial */}
             <SimpleCentered
-              name={language.index.testimonials.name}
-              paragraph={language.index.testimonials.paragraph}
-              position={language.index.testimonials.position}
+              name={t('testimonials.name')}
+              title={t('testimonials.title')}
+              paragraph={t('testimonials.paragraph')}
+              position={t('testimonials.position')}
             />
             
 
