@@ -1,0 +1,177 @@
+{   
+    "index": {
+        "metadata": {
+        "title": "",
+        "description": ""
+        },
+    "hero": {
+        "title": "Fight for your American Dream with Proven and Trustworthy Representation",
+        "subtitle": "Premier immigration services based in Atlanta, Georgia. Valentin Law, LLC is able to provide representation in 50 states. Immigration for All",
+        "button": {
+            "title": "Begin Now",
+            "link": "Learn More"
+        }
+    },
+    "services": {
+        "heading": "Our Services",
+        "title": "Client-Centered Immigration Services",
+        "paragraph": "Each case is different. Valentin Law, LLC focuses on your circumstances, and your best solution. You and your  case will always be our priority.",
+        "one": {
+            "image": "/icons/Homepage/svg2.1.svg",
+            "title": "Asylum Applications",
+            "paragraph": "Seeking asylum and protection from past persecution or conditions in one`s home country is of the most complex parts of the immigration system. Let us guide your thorugh this process."
+        },
+        "two": {
+            "image": "/icons/Homepage/svg2.2.svg",
+            "title": "Naturalization Process",
+            "paragraph": "The path to American citizenship is long and can require many years of diligent work and preparation. We will be there every step of the way."
+        },
+        "three": {
+            "image": "/icons/Homepage/svg2.3.svg",
+            "title": "Removal Defense (Immigration Court)",
+            "paragraph": "Being placed in immigraiton court can be a very confusing process. Failing to prepare a defense can result in deportation. Lets figure our your options, and move forward with the best defense in your case."
+        },
+        "four": {
+            "image": "/icons/services/thai.svg",
+            "title": "Adjustment of Status",
+            "paragraph": "Seeking residence in the United States? Let us guide you through the many steps involved in properly seeking this immigration benefit."
+        },
+        "button": {
+        "title": "Discover More",
+        "link": "/contact"
+        }
+    },
+    "about": {
+        "heading": "About Us",
+        "title": "Our Story and Mission",
+        "paragraph": {
+            "one": " A proud native of Peru, Mr. Valentin migrated to the United States at the age of 5. Without knowledge of the language or culture, through hard work, Mr. Valentin graduated from The University of North Carolina at Chapel Hill School of Law in 2020, becoming an attorney at the age of 25. He has since dedicated his career to representing hundreds of individuals in the field of immigration law throughout the United States. He has helped secure positive immigration outcomes for individuals from all kinds of backgrounds and countries of origin including: Mexico, Guatemala, Honduras, El Salvador, Peru, Uruguay, Argentina, Brazil, Ecuador, Venezuela, Nigeria, France, India, Russia, and more." ,
+            "two": ""
+        },
+        "features": {
+            "one": {
+                "title": "Swift and Efficient Service",
+                "description": "Prompt response times and efficient handling of your immigration matters. Valentin Law, LLC itself on its speed and effectiveness, ensuring your needs are addressed in a timely manner while maintaining the highest standards of quality."
+            },
+            "two": {
+                "title": "Expertise and Accuracy",
+                "description": "Valentin Law, LLC`s expertise in immigration law ensures accurate and precise handling of your case. You can trust that every detail will be meticulously addressed, resulting in optimal outcomes for your legal matters."
+            },
+            "three": {
+                "title": "Dedicated to Client Satisfaction",
+                "description": "Client satisfaction drives everything. From the initial consultation to the resolution of your immigration issues, your satisfaction is most important. Trust Valentin Law, LLC for an excellent service experience."
+            }
+        },
+        "button": {
+            "title": "Connect with Us",
+            "link": "/contact"
+        }
+    },    
+    "stat": {
+        "days": {
+            "monday": "monday",
+            "tuesday": "tuesday",
+            "wednesday": "wednesday",
+            "thursday": "thursday",
+            "friday": "friday",
+            "saturday": "saturday",
+            "sunday": "sunday"
+        },
+        "times": {
+            "time1": "7:00am - 8:00am",
+            "time2": "5:30pm - 6:30pm",
+            "time3": "6:30pm - 7:45pm",
+            "time4": "7:45pm - 8:45pm",
+            "time5": "7:30pm - 8:30pm",
+            "time6": "11:00pm - 1:00pm",
+            "time7": "6:30pm - 7:30pm",
+            "time8": "closed"
+        },
+        "class": {
+            "gi": "Gi",
+            "nogi": "No-Gi",
+            "kidsgi": "Kids Gi",
+            "fundamentals": "Fundamentals",
+            "advanced": "Advanced",
+            "openmat": "Open Mat",
+            "muaythai": "Muay Thai",
+            "closed": "Closed"
+        }
+    },
+    "testimonials": {
+        "heading": "Success Stories",
+        "title": "Hear What Our Members Say",
+        "name": "David Aguilar",
+        "position": "Queen City Web Solutions",
+        "paragraph": "Excellent service, Julio is a great person and because of his help my dad was able to get his residency. Julio took his time and prepared and guided my dad thru this difficult path. I will be always grateful for helping us."
+    },
+    "mission": {
+        "heading": "Why Choose Us",
+        "title": "Trusted Immigration Solutions",
+        "paragraph1": "We're more than just legal representatives; we're your local immigration advocates. With extensive experience serving the Atlanta, GA community, we comprehend the unique legal challenges individuals face in this region. Our specialized expertise ensures tailored solutions designed to address your immigration needs effectively and efficiently.",
+        "paragraph2": "Quality is our hallmark. We utilize top-tier legal strategies and state-of-the-art methodologies to secure enduring outcomes for our clients. Our dedicated team is committed to executing every case with precision and care, ensuring your legal status is safeguarded for the long haul.",
+        "paragraph3": "Client satisfaction drives our approach. We value your input, honor your timelines, and tailor our services to fit your specific requirements. We believe in fostering enduring partnerships with our clients, with your contentment being our foremost priority.",
+        "paragraph4": "We offer a comprehensive array of immigration services, from visa applications and green card assistance to asylum representation. Moreover, we deliver these extensive services at competitive rates, ensuring you receive optimal value without compromising on quality. Additionally, our exclusive discounts for military personnel, first responders, educators, and seniors make our services even more accessible.",
+        "button": {
+            "title": "Reach Out",
+            "link": "/contact"
+        }
+    },
+    "contact": {
+        "heading": "Contact Us",
+        "title": "Join Our Brazilian Jiu Jitsu Community",
+        "paragraph": "Have inquiries or require our assistance? Valentin Law is here for you! Call for expert guidance, consultations, and appointment scheduling. Fill out the form or give us a call – `our we are prepared to handle your immigration matters with care",
+        "button": {
+            "title": "Connect Now",
+            "link": ""
+        },
+        "fields": {
+            "firstname": "First Name",
+            "lastname": "Last Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Your Message",
+            "street": "Street Address",
+            "city": "City",
+            "state": "State",
+            "description": "Description of Issue & Services Needed"
+        }
+    },
+    "blog": {
+        "heading": "Insights & Tips",
+        "title": "Enhance Your Jiu Jitsu Knowledge",
+        "button": {
+            "title": "Read More",
+            "link": ""
+        },
+        "card1": {
+            "date": "07 Sept, 2023",
+            "article": "Mastering Essential Brazilian Jiu Jitsu Techniques",
+            "blogType": "Technique Breakdown",
+            "sentence": "Explore the fundamental techniques of Brazilian Jiu Jitsu and learn how they form the building blocks of your practice."
+        },
+        "card2": {
+            "date": "07 Sept, 2023",
+            "article": "The Mental Game: Overcoming Challenges in Jiu Jitsu",
+            "blogType": "Mindset",
+            "sentence": "Discover strategies to enhance your mental resilience and approach challenges with a focused and positive mindset in your Jiu Jitsu journey."
+        },
+        "card3": {
+            "date": "07 Sept, 2023",
+            "article": "The Benefits of Brazilian Jiu Jitsu for Women",
+            "blogType": "Women's Empowerment",
+            "sentence": "Learn about the unique advantages that Brazilian Jiu Jitsu offers to women, both in terms of self-defense skills and personal growth."
+        }
+    },
+    "newsletter": {
+        "heading": "Stay Informed and Inspired!",
+        "title": "Subscribe to Our Jiu Jitsu Updates",
+        "sentence": "Your home deserves the best care, and our expert team at Vapor X Crawlspaces is here to deliver just that. Whether it's for crawlspace encapsulation, repair, or maintenance, we're ready to provide top-quality, personalized solutions for your home ",
+        "button": {
+            "title": "Subscribe Now",
+            "link": "/contact"
+        }
+    }
+    }
+}
+

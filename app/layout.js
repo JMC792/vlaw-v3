@@ -1,3 +1,6 @@
+import {NextIntlClientProvider} from 'next-intl';
+
+
 // These styles apply to every route in the application
 import Footer from '@components/footer/Footer';
 import Navbar from '@components/headers/Navbar';

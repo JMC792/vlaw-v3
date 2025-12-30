@@ -1,15 +1,18 @@
 import Link from "next/link";
 import {Fragment} from "react";
 import Image from "next/image";
+import {useTranslations} from 'next-intl';
 
-export default function Hero({title,subtitle,button}) {
+export default function Hero() {
 
+    const t = useTranslations('index');
     const text = {
-        title: "Fight for your American Dream with Proven and Trustworthy Representation",
-        subtitle: "Explore premier immigration services. While based in Atlanta, Georgia, Valentin Law, LLC is able to provide representation in 50 states. Immigration for All",
-        button1: "Get started",
-        button2: "Learn more"
+        title: t('hero.title'),
+        subtitle: t('hero.subtitle'),
+        button1: t('hero.button.title'),
+        button2: t('hero.button.link')
     }
+
 
     return(
         <Fragment>
@@ -47,22 +50,22 @@ export default function Hero({title,subtitle,button}) {
                                 
                                 {/* Paragraph */}
                                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                                    {title}
+                                    {text.title}
                                 </h1>
 
                                 {/* Subtitle */}
                                 <h2 className="mt-6 text-lg leading-8 text-gray-300">
-                                    {subtitle}
+                                    {text.subtitle}
                                 </h2>
 
                                 {/* Buttons */}
                                 <div className="mt-10 flex items-center justify-center gap-x-6">
                                     <Link href="/contact" className="rounded-md bg-blue-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                        Get started
+                                        {text.button1}
                                     </Link>
 
                                     <Link href="/about" className="text-sm font-semibold leading-6 text-gray-300">
-                                        Learn more <span aria-hidden="true">→</span>
+                                        {text.button2} <span aria-hidden="true">→</span>
                                     </Link>
                                 </div>
 

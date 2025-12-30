@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import {useTranslations} from 'next-intl';
 
 //Components
 import Hero2 from "@components/hero/Hero2.js";
@@ -19,18 +20,20 @@ export const metadata = {
 }
 
 
-export default async function Page() {
+export default function Page() {
+
+  const t = useTranslations('index');
 
   return (
     <Fragment>
       <Hero2 
-        heroTitle={contact.hero.title} 
+        heroTitle={t('contact.heading')}
         heroSubtitle={contact.hero.subtitle}
         background={"bg-back-about"}
       />
       <Form3
         title = {contact.form.title}
-        paragraph = {contact.form.paragraph}
+        paragraph = {t('contact.paragraph')}
         phone = {layout.number}
         email = {layout.email}
       />
