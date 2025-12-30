@@ -4,6 +4,7 @@ import {useState, useEffect, Fragment} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {useRouter} from 'next/navigation';
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
 
 // Components
 import SideNav from './SideNav';
@@ -116,25 +117,13 @@ function Navbar(props) {
 
                                 {/* Language Switcher */}
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <button
-                                        type="button"
-                                        onClick={() => changeLanguage('en')}
-                                        className={` ${
-                                            locale === 'en'
-                                        }`}
-                                    >
+                                    <button type="button" onClick={() => changeLanguage('en')} className={` ${locale === 'en' ? 'text-yellow-600' : 'text-white'}`}>
                                         ENGLISH
                                     </button>
                                 </div>
 
                                 <div className="text-[16px] font-medium hover:text-yellow-600 transition-colors delay-100">
-                                    <button
-                                        type="button"
-                                        onClick={() => changeLanguage('es')}
-                                        className={` ${
-                                            locale === 'es'
-                                        }`}
-                                    >
+                                    <button type="button" onClick={() => changeLanguage('es')} xclassName={` ${locale === 'es'}`}>
                                         ESPAÑOL
                                     </button>
                                 </div>
