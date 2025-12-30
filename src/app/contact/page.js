@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import {useTranslations} from 'next-intl';
 
 //Components
-import Hero2 from "@components/hero/Hero2.js";
-import Form3 from "@components/forms/Form3.js";
+import Hero2 from "src/components/hero/Hero2.js";
+import Form3 from "src/components/forms/Form3.js";
 
 //Locales
 import layout from "public/locales/english/layout.json";

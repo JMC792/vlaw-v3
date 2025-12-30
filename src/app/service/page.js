@@ -2,9 +2,9 @@ import {Fragment} from "react";
 import {useTranslations} from 'next-intl';
 
 //Components
-import Hero2 from "@components/hero/Hero2.js";
-import OffsetList from "@components/features/OffsetList.js";
-import Centered2x2 from "@components/features/Centered2x2";
+import Hero2 from "src/components/hero/Hero2.js";
+import OffsetList from "src/components/features/OffsetList.js";
+import Centered2x2 from "src/components/features/Centered2x2";
 
 //Locales
 import service from "public/locales/english/services.json";

@@ -1,9 +1,9 @@
 import {Fragment} from "react";
 //Components
-import Hero from "@components/hero/Hero";
-import Centered2x2 from "@components/features/Centered2x2";
-import TwoColumnDark from "@components/features/TwoColumnDark";
-import SimpleCentered from "@components/testimonials/SimpleCentered";
+import Hero from "src/components/hero/Hero";
+import Centered2x2 from "src/components/features/Centered2x2";
+import TwoColumnDark from "src/components/features/TwoColumnDark";
+import SimpleCentered from "src/components/testimonials/SimpleCentered";
 import {useTranslations} from 'next-intl';
 
 //Locales/Data
@@ -14,7 +14,7 @@ import {useTranslations} from 'next-intl';
 // Images
 import image4 from "/public/images/homepage/photo1.jpeg";
 import Newsletter from "../components/newsletter/CTA1";
-import ProductScreenshot from "@components/features/ProductScreenshot";
+import ProductScreenshot from "src/components/features/ProductScreenshot";
 
 export default function Page() {
 

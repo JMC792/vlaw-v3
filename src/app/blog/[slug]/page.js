@@ -3,7 +3,7 @@ import Hero3 from "../../../components/hero/Hero3.js";
 import blog from "/public/locales/english/blog.json"
 import Article from "../../../components/content/Article.js";
 import about4 from "public/images/portfolio/portfolio1.webp"
-import { getBlogBySlug } from "lib/api";
+import { getBlogBySlug } from "src/lib/api.js";
 
 export const metadata = {
     title: 'Blog',

@@ -4,14 +4,14 @@ import { Fragment } from "react";
 import slug from "public/locales/english/slug.json"
 
 // Components
-import Hero3 from "@components/hero/Hero3.js";
-import Article from "@components/content/Article.js";
+import Hero3 from "src/components/hero/Hero3.js";
+import Article from "src/components/content/Article.js";
 
 // Images
 import about4 from "public/images/portfolio/portfolio1.webp"
 
 //API
-import { getBlogBySlug } from "lib/api";
+import { getBlogBySlug } from "src/lib/api";
 
 
 export const metadata = {

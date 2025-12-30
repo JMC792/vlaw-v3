@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 
 //Components
-import List from "@components/blog/List1.js";
-import Hero from "@components/hero/Hero2.js";
+import List from "src/components/blog/List1.js";
+import Hero from "src/components/hero/Hero2.js";
 
 // JSON Data
 import data from "public/data/portfolio.json"
